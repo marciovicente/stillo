@@ -5,22 +5,14 @@ $verde: #047D35;
 $clean: #009C39;
 $lato: "Lato", sans-serif;
 
+html, body {height: 100%;}
+
+*{margin: 0; padding: 0;}
+
 body{
 	margin: 0;
 	padding: 0;
-	background-image: linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
-	background-image: -o-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
-	background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
-	background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
-	background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
 
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.26, rgb(255,255,255)),
-		color-stop(0.58, rgb(242,242,242))
-	);
 	
 	
 	p,span,h1,h2,h3,h4,h5,h6{margin: 0; padding: 0;}
@@ -32,7 +24,20 @@ body{
 
 	#all{
 		width: 100%;
-
+		min-height: 100%;
+		background-image: linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
+	background-image: -o-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
+	background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
+	background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
+	background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.26, rgb(255,255,255)),
+		color-stop(0.58, rgb(242,242,242))
+	);
 		header#header{
 			border-top: 6px solid $clean;
 			width: 100%;
@@ -49,7 +54,7 @@ body{
 				background: $clean;
 				font-family: $lato;
 				color: #fff;
-				border-radius: 0 0 4px 4px;
+				border-radius: 0 0 4px 4px; 
 				-moz-border-radius: 0 0 4px 4px;
 				-webkit-border-radius: 0 0 4px 4px;		
 
@@ -242,10 +247,10 @@ body{
 					margin: 30px auto;
 					display: table;
 					width: 960px;
-					padding-bottom: 70px;
+					padding-bottom: 20px;
 
 					.service{
-						width: 150px;
+						width: 180px;
 						height: 150px;
 						float: left;
 						margin: 0 30px;	
@@ -259,7 +264,9 @@ body{
 							opacity: 1;
 							
 						}							
-
+						img{
+							margin: 0 14px;
+						}
 						h5{
 							font-size: 16px;
 							text-align: center;
@@ -271,6 +278,21 @@ body{
 					}
 
 				}
+
+				&.clientes{
+					width: 960px;
+					height: auto;
+					padding-bottom: 40px;
+
+					img{
+						box-shadow: 0 0 10px #ccc;
+						-webkit-box-shadow: 0 0 10px #ccc;
+						-moz-box-shadow: 0 0 10px #ccc;
+						margin: 25px 13px;
+					}
+
+
+				}
 			}
 		}
 	}
@@ -278,7 +300,13 @@ body{
 }
 
 
-
+#footer{
+	width: 100%;
+	height: 60px;
+	position: relative;
+	border-top: -60px;
+	background: $verde;
+}
 
 // slider 
 
@@ -373,3 +401,4 @@ body{
     box-shadow: 0 0 0 2px #009C39;
     transition: box-shadow 0.2s ease-in-out;
 }
+

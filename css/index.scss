@@ -13,8 +13,16 @@ body{
 	margin: 0;
 	padding: 0;
 
-	
-	
+	::selection{
+		background: #00e24f;
+		color: #fff;
+		text-shadow: none;
+	}
+	::-moz-selection{
+		background: #00e24f;
+		color: #fff;
+		text-shadow: none;
+	}
 	p,span,h1,h2,h3,h4,h5,h6{margin: 0; padding: 0;}
 	
 	.int{
@@ -259,21 +267,31 @@ body{
 						-moz-transition: all .25s ease-in-out;
 						-ms-transition: all .25s ease-in-out;
 						-o-transition: all .25s ease-in-out;
-
 						&:hover{
 							opacity: 1;
-							
-						}							
+						}					
 						img{
 							margin: 0 14px;
 						}
 						h5{
 							font-size: 16px;
 							text-align: center;
-							//color: #999;
 							text-shadow: 1px 1px 1px #fff;
 							line-height: 19px;
 							font-family: $lato;
+							margin-top: 18px;
+
+							&:nth-child(2){
+								width: 224px;
+								margin-left: -32px;
+							}
+
+						}
+						
+						&.clean{
+							h5{
+								margin-left: -47px;
+							}
 						}
 					}
 
@@ -292,6 +310,39 @@ body{
 					}
 
 
+				}
+			}
+
+			.servicoUnd{
+				width: 960px;
+				height: auto;
+				margin: 50px auto;
+				display: table;
+
+				.imgService{
+					width: 134px;
+					float: left;
+					height: auto;
+					margin-top: 25px;
+				
+				}
+
+				h3{
+					float: left;
+					width: 720px;
+					height: auto;
+					margin-left: 30px;
+					color: $clean;
+					font-family: $lato;
+				}
+
+				p{
+					width: 720px;
+					float: left;
+					margin-left: 30px;
+					font-family: Arial;
+					font-size: 13px;
+					text-shadow: 1px 1px 1px #fff;
 				}
 			}
 		}

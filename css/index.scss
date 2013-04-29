@@ -91,7 +91,7 @@ body{
 					-ms-transition: all .25s ease-in-out;
 					-o-transition: all .25s ease-in-out;
 					
-					&:hover{
+					&:hover, &.active{
 						border-bottom: 3px solid $clean;
 						color: $clean;
 					}

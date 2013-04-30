@@ -30,6 +30,8 @@ body{
 		margin: 0 auto;
 	}
 
+	.wrapper{
+	}
 	#all{
 		width: 100%;
 		min-height: 100%;
@@ -38,6 +40,7 @@ body{
 		background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
 		background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
 		background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
+
 		
 		background-image: -webkit-gradient(
 			linear,
@@ -53,6 +56,10 @@ body{
 			height: 110px;
 			background:#fff;
 			border-bottom: 3px solid #E2E2E2;
+			position: fixed;
+			display: block;
+			margin-top: -110px;
+			z-index: 90000;
 			
 
 			h3{
@@ -66,9 +73,9 @@ body{
 				border-radius: 0 0 4px 4px; 
 				-moz-border-radius: 0 0 4px 4px;
 				-webkit-border-radius: 0 0 4px 4px;		
-				-webkit-box-shadow: 5px 4px 10px rgba(0,0,0, 0.3);
-				-moz-box-shadow: 5px 4px 10px rgba(0,0,0, 0.3);
-				box-shadow: 5px 4px 10px rgba(0,0,0, 0.3);
+				// -webkit-box-shadow: 5px 4px 10px rgba(0,0,0, 0.3);
+				// -moz-box-shadow: 5px 4px 10px rgba(0,0,0, 0.3);
+				// box-shadow: 5px 4px 10px rgba(0,0,0, 0.3);
 			}
 
 			h4{
@@ -83,12 +90,15 @@ body{
 				-moz-border-radius: 0 0 6px 0;
 				border-radius: 0 0 6px 0;
 				font-family: $lato;
+				cursor: pointer;
 
 			}
 			#brand{
-				width: 250px;
-				height: 80px;
+				width: 245px;
+				height: 97px;
 				float: left;
+				background: url(../images/brand.jpg) no-repeat center center;
+				margin: 5px;
 			}
 
 			#menu{
@@ -120,7 +130,7 @@ body{
 
 		#content{
 			padding-top: 0;
-			margin: 0;
+			margin-top: 110px;
 			height: auto;
 			min-height: 600px;
 
@@ -163,9 +173,9 @@ body{
 						}
 
 						button{
-							background-color: #4cae4c;
 							width: 140px;
 							height: 35px;
+							background-color: #4cae4c;
 							border: 1px solid #449d44;
 							border-radius: 2px;
 							-moz-border-radius: 2px;
@@ -389,7 +399,15 @@ body{
 
 					button{
 						width: 463px;
-						
+						background-color: #4cae4c;
+						border: 1px solid #449d44;
+						border-radius: 2px;
+						-moz-border-radius: 2px;
+						-webkit-border-radius: 2px;
+						color: #fff;
+						font-weight: bold;
+						height: 45px;
+						font-size: 19px;
 					}
 				}
 			}

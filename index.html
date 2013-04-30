@@ -29,23 +29,24 @@
 
 	<body>
 	<div id="all">
+		<header id="header">
+			<div class="int">
+				
+				<a href="http://stillorefrigeracao.com.br"><div id="brand"></div></a>
+				
+				<h4>Solicite um orçamento</h4>
+				<h3 id="phone">(71) 3383-9091</h3>
+				<nav id="menu">
+					<a href="index.html">Home</a>
+					<a href="servicos.html">Serviços</a>
+					<a href="empresa.html">A empresa</a>
+					<a href="orcamento.html">Orçamento</a>
+					<a href="contato.html">Contato</a>
+				</nav>	
+			</div>
+		</header>
+
 		<div class="wrapper">
-			<header id="header">
-				<div class="int">
-					
-					<a href="http://stillorefrigeracao.com.br"><div id="brand"></div></a>
-					
-					<h4>Solicite um orçamento</h4>
-					<h3 id="phone">(71) 3383-9091</h3>
-					<nav id="menu">
-						<a href="index.html">Home</a>
-						<a href="servicos.html">Serviços</a>
-						<a href="empresa.html">A empresa</a>
-						<a href="orcamento.html">Orçamento</a>
-						<a href="contato.html">Contato</a>
-					</nav>	
-				</div>
-			</header>
 			<section id="content">
 
 				<div id="cbp-fwslider" class="cbp-fwslider">
@@ -155,11 +156,11 @@
 				$('form#formNewsletter').submit(function(){
 					$.ajax({
 						type: 'POST',
-						dataType: 'html',
+						dataType: 'json',
 						cache: false,
 						url: 'newsletter.php',
 						success: function(data){
-							if(data == true)
+							if(data.error == true)
 								$('form#formNewsletter').html("<h3> Você foi cadastrado com sucesso </h3>"); 
 							else
 								$('form#formNewsletter').html("<h4> Ocorreu um erro, tente novamente mais tarde</h4>"); 

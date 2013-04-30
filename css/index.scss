@@ -34,18 +34,19 @@ body{
 		width: 100%;
 		min-height: 100%;
 		background-image: linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
-	background-image: -o-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
-	background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
-	background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
-	background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.26, rgb(255,255,255)),
-		color-stop(0.58, rgb(242,242,242))
-	);
+		background-image: -o-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
+		background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
+		background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
+		background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 26%, rgb(242,242,242) 58%);
+		
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.26, rgb(255,255,255)),
+			color-stop(0.58, rgb(242,242,242))
+		);
+		
 		header#header{
 			border-top: 6px solid $clean;
 			width: 100%;
@@ -65,6 +66,23 @@ body{
 				border-radius: 0 0 4px 4px; 
 				-moz-border-radius: 0 0 4px 4px;
 				-webkit-border-radius: 0 0 4px 4px;		
+				-webkit-box-shadow: 5px 4px 10px rgba(0,0,0, 0.3);
+				-moz-box-shadow: 5px 4px 10px rgba(0,0,0, 0.3);
+				box-shadow: 5px 4px 10px rgba(0,0,0, 0.3);
+			}
+
+			h4{
+				width: 200px;
+				height: 26px;
+				padding: 3px 10px;
+				background: #000;
+				float: right;
+				background: #006e28;
+				color: #fff;
+				-webkit-border-radius: 0 0 6px 0;
+				-moz-border-radius: 0 0 6px 0;
+				border-radius: 0 0 6px 0;
+				font-family: $lato;
 
 			}
 			#brand{
@@ -79,7 +97,7 @@ body{
 				width: auto;
 				float: right;
 				margin-top: 80px;
-				margin-right: -215px;
+				margin-right: -443px;
 
 				a{
 					text-decoration: none;

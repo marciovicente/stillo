@@ -10,6 +10,7 @@
 		<meta name="expires" content="never">
 		<meta name="rating" content="general">
 		<meta name="description" content="">
+		<!-- TROCAAAA -->
 		<meta name="keywords" content="salvatur teen, salvaturteen, disney salvador, viagem jovem, disney 2013, salvatur 2013, salvatur disney, pacotes disney, viagens disney, sonho disney, salvatur teen">
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
@@ -34,7 +35,8 @@
 					
 					<a href="http://stillorefrigeracao.com.br"><div id="brand"></div></a>
 					
-					<h3 id="phone">(75) 3383-9091</h3>
+					<h4>Solicite um orçamento</h4>
+					<h3 id="phone">(71) 3383-9091</h3>
 					<nav id="menu">
 						<a href="index.html">Home</a>
 						<a href="servicos.html">Serviços</a>
@@ -149,6 +151,26 @@
 		<script type="text/javascript">
 			$( function() {
 				$( '#cbp-fwslider' ).cbpFWSlider();
+
+				$('form#formNewsletter').submit(function(){
+					$.ajax({
+						type: 'POST',
+						dataType: 'html',
+						cache: false,
+						url: 'newsletter.php',
+						success: function(data){
+							if(data == true)
+								$('form#formNewsletter').html("<h3> Você foi cadastrado com sucesso </h3>"); 
+							else
+								$('form#formNewsletter').html("<h4> Ocorreu um erro, tente novamente mais tarde</h4>"); 
+						}
+					// ,
+					// 	error: function(data){
+					// 	}
+
+					});
+					return false;
+				});
 			} );
 		</script>
 </body>

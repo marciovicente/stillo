@@ -11,10 +11,10 @@
 		<meta name="rating" content="general">
 		<meta name="description" content="">
 		<meta name="keywords" content="salvatur teen, salvaturteen, disney salvador, viagem jovem, disney 2013, salvatur 2013, salvatur disney, pacotes disney, viagens disney, sonho disney, salvatur teen">
-		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="build/css/index.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="build/css/bootstrap.css">
 		 
 		
 		<meta property="og:title" content="Stillo Refrigeração e Serviços">
@@ -57,22 +57,11 @@
 		</div> <!-- wrapper -->
 
 	</div> <!-- all -->
-
-	<footer id="footer">
-		<div class="int">footer</div>
-	</footer>
+	
+	<?php include('footer.php'); ?>
 
 
-		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
- 		<script type="text/javascript" src="js/all.min.js"></script>
-
-		<script type="text/javascript">
-			
-
-			$( function() {
-				$( '#cbp-fwslider' ).cbpFWSlider();
-
-			} );
-		</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
 </body>
 </html>

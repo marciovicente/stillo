@@ -6,7 +6,7 @@
 		<h3 id="phone">(71) 3641-1958</h3>
 		<nav id="menu">
 			<a href="index.php">Home</a>
-			<a href="'s'ervicos.php">Serviços</a>
+			<a href="servicos.php">Serviços</a>
 			<a href="empresa.php">A empresa</a>
 			<a href="orcamento.php">Orçamento</a>
 			<a href="contato.php">Contato</a>

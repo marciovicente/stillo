@@ -11,10 +11,10 @@
 		<meta name="description" content="">
 		<!-- TROCAAAA -->
 		<meta name="keywords" content="salvatur teen, salvaturteen, disney salvador, viagem jovem, disney 2013, salvatur 2013, salvatur disney, pacotes disney, viagens disney, sonho disney, salvatur teen">
-		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="build/css/index.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="build/css/bootstrap.css">
 		 
 		
 		<meta property="og:title" content="Stillo Refrigeração e Serviços">
@@ -63,13 +63,13 @@
 
 							<article class="article">
 								<span>2</span>
-								<h4>Por que nos escolher?</h4>
+								<h4>Segurança e meio ambiente</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit leo eu lectus viverra dictum vel sed erat. Vivamus est urna, sollicitudin in varius eget, ullamcorper sed velit. Donec felis magna, imperdiet id posuere at.</p>
 							</article>
 
 							<article class="article">
 								<span>3</span>
-								<h4>Por que nos escolher?</h4>
+								<h4>Amarração legal</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit leo eu lectus viverra dictum vel sed erat. Vivamus est urna, sollicitudin in varius eget, ullamcorper sed velit. Donec felis magna, imperdiet id posuere at.</p>
 							</article>
 						</section>
@@ -103,15 +103,15 @@
 					</section>
 
 					<section class="container clientes">
-						<h4>Clientes</h4>
+						<h4>Principais clientes</h4>
 
 						<div class="listaClientes">
-							<!-- <img src="images/cliente1.jpg" class="img-rounded" alt="Petrobras"> -->
 							<!-- <img src="images/cliente2.jpg" class="img-rounded" alt="Perbras"> -->
+							<img src="images/cliente1.jpg" class="img-rounded" alt="Petrobras">
 							<img src="images/cliente3.jpg" class="img-rounded" alt="Clinica Semec">
 							<img src="images/cliente4.jpg" class="img-rounded" alt="GB Engenharia">
 							<img src="images/cliente5.jpg" class="img-rounded" alt="IFBA">
-							<div class="muitoMais"><span>E muito +</span></div>
+							<div class="muitoMais"><span>Entre outros</span></div>
 						</div>	
 					</section>
 
@@ -125,8 +125,8 @@
 	<?php include("footer.php") ?>
 
 
-		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
- 		<script type="text/javascript" src="js/all.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="build/js/app.min.js"></script>
 
 		<script type="text/javascript">
 			$( function() {

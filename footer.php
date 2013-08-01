@@ -10,12 +10,13 @@
 			<a href="contato.php">Contato</a>
 		</nav>
 
-		<div class="contact">
+		<div class="contacts">
 			<h4>
-				<i class="icon-phone"></i> 71 3641-1958<br>
-				<i class="icon-address-marker"></i>Rua José Visco, 37, Pioneiro - Catu/BA
-
+				<i class="icon-call"></i> <span>71</span> 3641-1958 <br>
 			</h4>
+			<h5>
+				<i class="icon-location"></i> Rua José Visco, 37, Pioneiro - Catu/BA
+			</h5>
 			
 		</div>
 	</div>
